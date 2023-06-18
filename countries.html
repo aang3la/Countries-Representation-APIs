@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Represetation</title>
+    <link rel="stylesheet" type="text/css" href="countries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Countries Represetation</h1>
+
+    <div class="dropdown">
+      <button class="dropdown-btn">Sort By</button>
+      <div class="dropdown-content">
+        <button onclick="sortList('name', 'asc')">Ascending</button>
+        <button onclick="sortList('name', 'desc')">Descending</button>
+      </div>
+    </div>
+
+    <button id="area-btn" onclick="filterByArea(210)">Filter Countries Smaller than Lithuania</button>
+    <button id="region-btn" onclick="filterByRegion('Oceania')">Filter Countries by Region Oceania</button>
+
+    <ul id="list-container"></ul>
+
+    <script type="text/javascript" src="countries.js"></script>
+</body>
+</html>
